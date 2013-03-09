@@ -28,3 +28,4 @@ Parts List
 Guides
 ------
 - Simple ["Shrimp"](http://hackaday.com/2012/11/10/the-ultimate-low-cost-dev-board/) Arduino
+- Someones done somthing similar?! [here](http://www.instructables.com/id/Tempduino-Arduino-Based-Temp-and-Humidity-Displa/)
