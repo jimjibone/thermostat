@@ -5,10 +5,10 @@ Thermostat Peripheral
 Things that need doing
 ----------------------
 
--[] Finding a thermocouple component worthy of accurately determining the temperature of a room.
--[] Use [Averclock](https://github.com/naggie/averclock) to help produce a timer for the Arduino mircocontroller.
--[] Develop a system that allows the microcontroller to communicate with a computer.
--[] Create a low cost battery and charging system for power cut protection.
+- [ ] Finding a thermocouple component worthy of accurately determining the temperature of a room.
+- [ ] Use [Averclock](https://github.com/naggie/averclock) to help produce a timer for the Arduino mircocontroller.
+- [ ] Develop a system that allows the microcontroller to communicate with a computer.
+- [ ] Create a low cost battery and charging system for power cut protection.
 
 Temperature Sensors
 -------------------
