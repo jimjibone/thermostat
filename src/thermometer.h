@@ -73,6 +73,6 @@ void thermometer_serial_print(void) {
 	Serial.print(":");
 	Serial.print(time.seconds, DEC);
 	Serial.print("    -    Temp: ");
-	Serial.print(thermo_value_celsius, DEC);
+	Serial.print(thermo_value_celsius);
 	Serial.println(" degC");
 }
