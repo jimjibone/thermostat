@@ -22,11 +22,12 @@ void setup()
 	SCH_init(50);	// 50ms per tick
 	
 	// Initialise everything we need
-	heartbeat_init();
+	thermometer_init();
 	
 	// Setup timing for scheduler
 	SCH_add_task(time_inc_sec, 1, 20);		//50ms * 20ticks = 1000ms
-	SCH_add_task(heartbeat_flash, 2, 10);		//50ms * 10ticks = 500ms
+	SCH_add_task(thermometer_update, 2, 10);	//50ms * 10ticks = 500ms
+	SCH_add_task(thermometer_serial_print, 3, 20);	//50ms * 20ticks = 1000ms
 	
 	// Let's go
 	SCH_start();

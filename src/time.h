@@ -2,8 +2,10 @@
 // Copyright, where applicable, James Reuss 2013.
 // Created 22 March 2013.
 
-//#include "../config.h"
-//#include "some_time.h"
+#pragma once
+
+#include "../config.h"
+#include "some_time.h"
 
 // define a struct to hold the time
 typedef struct {

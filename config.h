@@ -1,3 +1,5 @@
+#pragma once
+
 // set time from PC?
 #define AUTO_TIME
 
