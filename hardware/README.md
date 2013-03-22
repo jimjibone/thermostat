@@ -13,7 +13,7 @@ How to bootload an **ATmega328P** using nothing but a real Arduino:
 1. Rename the adaLoader unzipped folder to `adaLoader`
 1. Open `adaLoader.pde` using Arduino 0023
 1. In the IDE open the `images.cpp` file and make sure that the signature for the 328P is `0x950F`
-1. Using a real Arduino UNO build this ![adaLoader Breadboard](ATMEGA328P%20AdaLoader.png)
+1. Using a real Arduino UNO build this (just to note, the round thing is a piezo speaker) ![adaLoader Breadboard](ATMEGA328P%20AdaLoader.png)
 1. Insert your fresh ATMEGA328P
 1. Plug in the Arduino UNO via USB and upload adaLoader
 1. Open the Serial Monitor
@@ -26,7 +26,9 @@ Creating a simple breadboard for FTDI USB power and programming
 
 Now you have a bootloaded ATMEGA you're gonna want to upload stuff to it. Do this stuff:
 
-1. Make this simple board up to get you going ![adaLoader Breadboard](ATMEGA328P%20Simple.png)
+1. Make this simple board up to get you going
+	- Capacitors are 2 x 10uF electrlytic and 2 x 22pF ceramic (for XTAL)
+![adaLoader Breadboard](ATMEGA328P%20Simple.png)
 1. And using a FTDI cable (I have a TTL-232R-3V3 cable)
 1. In the Arduino IDE, on the menu bar go into `Tools > Board` and select `Arduino Duemilanove or Nano w/ ATmega328` (or similar)
 1. Select the serial port for the FTDI cable
