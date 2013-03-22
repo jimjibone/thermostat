@@ -1,15 +1,20 @@
 Thermostat Peripheral
 =====================
 
+Requires `averclock` available [here](https://github.com/jimjibone/averclock/tree/master/src) (put it in the same dir as `thermostat`)
+
 Building and Uploading
 ----------------------
 
 To get the Arduino IDE or Ino to build and upload you have to make it think you want to upload to a Arduino Duemilanove w/ ATmega328.
 
 To do this with Ino:
+
 1. `ino build -m atmega328`
 1. `ino upload -m atmega 328`
 1. Done.
+
+> Or thanks to [averclock](https://github.com/naggie/averclock) and `ino.ini` you can just do `ino build && ino upload`
 
 Things that need doing
 ----------------------
