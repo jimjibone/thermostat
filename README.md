@@ -1,6 +1,15 @@
 Thermostat Peripheral
 =====================
-*Still designing 'n' that*
+
+Building and Uploading
+----------------------
+
+To get the Arduino IDE or Ino to build and upload you have to make it think you want to upload to a Arduino Duemilanove w/ ATmega328.
+
+To do this with Ino:
+1. `ino build -m atmega328`
+1. `ino upload -m atmega 328`
+1. Done.
 
 Things that need doing
 ----------------------
