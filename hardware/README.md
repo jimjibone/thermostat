@@ -35,3 +35,5 @@ Now you have a bootloaded ATMEGA you're gonna want to upload stuff to it. Do thi
 1. Upload the simple Blink example or whatever you fancy.
 
 Hope it works
+
+> Confirmed to work in Arduino 1.0.3
