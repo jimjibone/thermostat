@@ -2,6 +2,7 @@
 # does not see octal for values less than 10
 (
 	echo "// This allow the clock to the set to the current time automatically"
+	echo "#pragma once"
 	echo "#define MINUTES  $(date +%M | bc)"
 	echo "#define HOURS    $(date +%k | bc)"
 	echo "#define SECONDS  $(date +%S | bc)"

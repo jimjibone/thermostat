@@ -5,7 +5,7 @@
 #pragma once
 
 #include "../config.h"
-#include "some_time.h"
+#include "current_time.h"
 
 // define a struct to hold the time
 typedef struct {
