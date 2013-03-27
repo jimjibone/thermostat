@@ -8,6 +8,8 @@
 	echo "#define SECONDS  $(date +%S | bc)"
 ) > src/current_time.h
 
+echo "Uploading time $(date +%k | bc):$(date +%M | bc):$(date +%S | bc)"
+
 ino build && ino upload
 
 # better reset to zero
