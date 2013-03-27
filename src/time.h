@@ -24,9 +24,9 @@ void time_dec_hour(void);
 
 #ifdef AUTO_TIME
 	// initialise with compile-time time with an offset to account for build/upload time
-	_time time = {HOURS,MINUTES,SECONDS};
+	_time time = {HOURS,MINUTES,SECONDS+9};
 #else
-	_time time = {9,0,0};
+	_time time = {0,0,0};
 #endif
 
 
