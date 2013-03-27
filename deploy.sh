@@ -13,4 +13,4 @@ echo "Uploading time $(date +%k | bc):$(date +%M | bc):$(date +%S | bc)"
 ino build && ino upload
 
 # better reset to zero
-#git checkout src/current_time.h
+git checkout src/current_time.h
