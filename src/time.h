@@ -26,9 +26,8 @@ void time_dec_hour(void);
 	// initialise with compile-time time with an offset to account for build/upload time
 	_time time = {HOURS,MINUTES,SECONDS};
 #else
-	_time time = {0,0,0};
+	_time time = {9,0,0};
 #endif
-
 
 
 
