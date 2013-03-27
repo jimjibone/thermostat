@@ -5,7 +5,7 @@
 #pragma once
 #include "time.h"
 // http://www.pjrc.com/teensy/td_libs_OneWire.html
-#include <OneWire.h>
+#include "OneWire.h"
 
 static const uint8_t thermo_addr[] = 
 	{0x28, 0x56, 0x9, 0x9C, 0x4, 0x0, 0x0, 0x1C, 0x28};
