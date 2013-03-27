@@ -1,7 +1,9 @@
 Thermostat Peripheral
 =====================
 
-Requires `averclock` available [here](https://github.com/jimjibone/averclock/tree/master/src) (put it in the same dir as `thermostat`)
+Requires:
+- `averclock` available [here](https://github.com/jimjibone/averclock/tree/master/src) (put it in the same dir as `thermostat`)
+- OneWire Arduino library [here (with help)](http://www.pjrc.com/teensy/td_libs_OneWire.html) - Install to `/Applications/Arduino/Resources/Java/libraries`
 
 Building and Uploading
 ----------------------
