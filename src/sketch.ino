@@ -12,21 +12,23 @@
 #include "time.h"
 #include "thermometer.h"
 #include "schavr.h"
-//#include "display.h"
+#include "lcd.h"
 //#include "remote.h"
 
 void setup()
 {
 	// Setup scheduler
-	SCH_init(50);	// 50ms per tick
+	SCH_init(200);	// 200ms per tick
 	
 	// Initialise everything we need
 	thermometer_init();
+	lcd_init();
 	
 	// Setup timing for scheduler
-	SCH_add_task(time_inc_sec, 1, 20);		//50ms * 20ticks = 1000ms
-	SCH_add_task(thermometer_update, 2, 10);	//50ms * 10ticks = 500ms
-	SCH_add_task(thermometer_serial_print, 3, 40);	//50ms * 40ticks = 2000ms
+	SCH_add_task(time_inc_sec, 1, 5);		//200ms * 5ticks = 1000ms
+	SCH_add_task(thermometer_update, 2, 5);	//200ms * 5ticks = 1000ms
+	SCH_add_task(thermometer_serial_print, 3, 10);	//200ms * 10ticks = 2000ms
+	SCH_add_task(lcd_update, 4, 25);	//200ms * 25ticks = 5000ms
 	
 	// Let's go
 	SCH_start();

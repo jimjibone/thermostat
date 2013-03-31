@@ -18,6 +18,7 @@ OneWire thermo(10);	// DS18B20+ on pin "10"
 static bool thermo_read_state = 0;
 
 float thermo_value_celsius = 0;
+bool thermo_value_changed = 0;
 
 void thermometer_init(void);
 void thermometer_update(void);
@@ -59,6 +60,7 @@ void thermometer_update(void) {
 		// Convert.
 		unsigned int raw = (data[1] << 8) | data[0];	// 12 bit
 		thermo_value_celsius = (float)raw/16.0;
+		thermo_value_changed = 1;
 	}
 	thermo_read_state = !thermo_read_state;
 	
