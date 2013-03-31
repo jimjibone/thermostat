@@ -6,6 +6,7 @@
 #pragma once
 #include <LiquidCrystal.h>
 #include "thermometer.h"
+#include "time.h"
 
 #define buffer_size 7
 
@@ -21,6 +22,7 @@ void lcd_init(void)
 
 void lcd_update(void)
 {
+	// update thermo reading
 	if (thermo_value_changed > 0) {
 		thermo_value_changed = 0;
 		buffer[0] = (char)(thermo_value_celsius / 10.0) + 48;
@@ -34,4 +36,10 @@ void lcd_update(void)
 			lcd.write(buffer[i]);
 		}
 	}
+	
+	// update time
+	lcd.setCursor(10, 0);
+	lcd.print(time.hours);
+	lcd.print(":");
+	lcd.print(time.minutes);
 }
