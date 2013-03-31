@@ -26,8 +26,8 @@ void setup()
 	
 	// Setup timing for scheduler
 	SCH_add_task(time_inc_sec, 1, 5);		//200ms * 5ticks = 1000ms
-	SCH_add_task(thermometer_update, 2, 5);	//200ms * 5ticks = 1000ms
-	SCH_add_task(thermometer_serial_print, 3, 10);	//200ms * 10ticks = 2000ms
+	SCH_add_task(thermometer_update, 2, 10);	//200ms * 10ticks = 2000ms
+	//SCH_add_task(thermometer_serial_print, 3, 10);	//200ms * 10ticks = 2000ms
 	SCH_add_task(lcd_update, 4, 25);	//200ms * 25ticks = 5000ms
 	
 	// Let's go
