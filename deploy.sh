@@ -26,5 +26,7 @@ T="$(($(date +%s)-T))"
 
 # better reset to zero
 git checkout src/current_time.h
+# and sync the new time offset
+git commit ./timeoffset -m "auto timeoffset update" && git push
 
 echo "Time taken in seconds: ${T}"
